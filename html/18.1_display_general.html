@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18.1 display - general</title>
+  </head>
+  <style>
+    li {
+      display: inline; /*Displays an element as an inline element*/
+    }
+    span {
+      display: block;
+    }
+    a {
+      display: block;
+    }
+    h1.h1-display-none {
+      display: none;
+    }
+    h1.h1-display-hidden {
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <!--
+        display:block y element (tiene màs valores, p ej: contents, flex, grid, ...)
+        *block:
+            div,h1,h6,p,form,header,footer,section
+        *inline:
+            span,a,img            
+    -->
+    <br />
+    <ul>
+      <li>li-1</li>
+      <li>li-2</li>
+      <li>li-3</li>
+    </ul>
+    <p>===========================</p>
+    <br />
+    <h1>Display span elements as block elements</h1>
+    <span>A display property with | </span>
+    <span>a value of "block" results in | </span>
+    <span>a line break between each span elements.</span>
+    <br />
+    <p>===========================</p>
+    <a href="/html/default.asp" target="_blank">HTML</a>
+    <a href="/css/default.asp" target="_blank">CSS</a>
+    <a href="/js/default.asp" target="_blank">JavaScript</a>
+    <br />
+    <p>===========================</p>
+    <h1>This is a visible heading</h1>
+    <h1 class="h1-display-none">This is a hidden heading</h1>
+    <p>
+      Notice that the h1 element with display: none; does not take up any space.
+    </p>
+    <br />
+    <p>===========================</p>
+    <h1>This is a visible heading</h1>
+    <h1 class="h1-display-hidden">This is a hidden heading!</h1>
+    <p>Notice that the hidden heading still takes up space.</p>
+  </body>
+</html>

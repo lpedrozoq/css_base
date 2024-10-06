@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22.1 overflow</title>
+    <style>
+      div.div-overflow-visible {
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid;
+        overflow: visible; /*es la opciòn por defult*/
+      }
+      div.div-overflow-hidden {
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+      div.div-overflow-scroll {
+        background-color: coral;
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        overflow: scroll;
+      }
+      div.div-overflow-scroll-auto {
+        background-color: coral;
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        overflow: scroll;
+      }
+      div.div-overflow-scroll-x-y {
+        background-color: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid black;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Overflow: visible ======================</h2>
+
+    <p>
+      By default, the overflow is visible, meaning that it is not clipped and it
+      renders outside the element's box:
+    </p>
+
+    <div class="div-overflow-visible">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <br />
+
+    <br />
+    <!--Se aplican varios br dado que el overflow te permite escribir encima defult
+    texto -->
+
+    <h2>Overflow: hidden=======================</h2>
+
+    <p>
+      With the hidden value, the overflow is clipped, and the rest of the
+      content is hidden:
+    </p>
+    <p>Try to remove the overflow property to understand how it works.</p>
+
+    <div class="div-overflow-hidden">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <h2>Overflow: scroll===========================</h2>
+
+    <p>
+      Setting the overflow value to scroll, the overflow is clipped and a
+      scrollbar is added to scroll inside the box. Note that this will add a
+      scrollbar both horizontally and vertically (even if you do not need it):
+    </p>
+
+    <div class="div-overflow-scroll">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <h2>Overflow: scroll===========================</h2>
+
+    <p>
+      Setting the overflow value to scroll, the overflow is clipped and a
+      scrollbar is added to scroll inside the box. Note that this will add a
+      scrollbar both horizontally and vertically (even if you do not need it):
+    </p>
+
+    <div class="div-overflow-scroll-auto">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <h2>Overflow-x and overflow-y===========================</h2>
+
+    <p>
+      You can also change the overflow of content horizontally or vertically.
+    </p>
+    <p>
+      overflow-x specifies what to do with the left/right edges of the content.
+    </p>
+    <p>
+      overflow-y specifies what to do with the top/bottom edges of the content.
+    </p>
+
+    <div class="div-overflow-scroll-x-y">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <h2>Float Next To Each Other===========================================</h2>
+
+    <p>In this example, the three divs will float next to each other.</p>
+
+    <div class="div-overflow-0 div-overflow-1">Div 1</div>
+    <div class="div-overflow-0 div-overflow-2">Div 2</div>
+    <div class="div-overflow-0 div-overflow-3">Div 3</div>
+  </body>
+</html>

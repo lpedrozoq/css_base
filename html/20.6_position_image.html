@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20.6 position - image</title>
+    <style>
+      div.div-container {
+        position: relative;
+      }
+      div.div-topleft {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 16px;
+      }
+      div.div-topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+      }
+      div.div-bottomleft {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-size: 18px;
+      }
+      div.div-bottomright {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 18px;
+      }
+
+      img.img-1 {
+        /*width: 100px;*/
+        height: auto;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image Text</h2>
+    <p>Add some text to an image in the top left corner:</p>
+
+    <div class="div-container">
+      <img
+        class="img-1"
+        src="/images/image.jfif"
+        alt="Yuyu!"
+        width="1000"
+        height="300"
+      />
+      <div class="div-topleft">Top Left</div>
+      <div class="div-topright">Top Right</div>
+      <div class="div-bottomleft">Bottom left</div>
+      <div class="div-bottomright">Bottom right</div>
+    </div>
+  </body>
+</html>

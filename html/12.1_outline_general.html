@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.1 outline - general</title>
+    <style>
+      p.p-0 {
+        outline-color: red;
+      }
+      p.p-1 {
+        border: 2px solid black;
+        outline: #4caf50 solid 10px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+      }
+      p.p-dotted {
+        outline-style: dotted;
+      }
+      p.p-dashed {
+        outline-style: dashed;
+      }
+      p.p-solid {
+        outline-style: solid;
+      }
+      p.p-double {
+        outline-style: double;
+      }
+      p.p-groove {
+        outline-style: groove;
+      }
+      p.p-ridge {
+        outline-style: ridge;
+      }
+      p.p-inset {
+        outline-style: inset;
+      }
+      p.p-outset {
+        outline-style: outset;
+      }
+
+      p.p-ex-1 {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: thin; /*(typically 1px)* (in px, pt, cm, em, etc)*/
+      }
+
+      p.p-ex-2 {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: medium; /*(typically 3px)*/
+      }
+
+      p.p-ex-3 {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: thick; /*(typically 5px)*/
+      }
+
+      p.p-ex-4 {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: 4px;
+      }
+
+      /*
+      outline-width
+      outline-style (required)
+      outline-color
+      */
+
+      p.p-ex-sh-1 {
+        outline: dashed;
+      }
+      p.p-ex-sh-2 {
+        outline: dotted red;
+      }
+      p.p-ex-sh-3 {
+        outline: 5px solid yellow;
+      }
+      p.p-ex-sh-4 {
+        outline: thick ridge pink;
+      }
+
+      p.p-offset-1 {
+        margin: 30px;
+        background: yellow;
+        border: 1px solid black;
+        outline: 1px solid red;
+        outline-offset: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Outline</h2>
+    <p class="p-1">
+      This element has a 2px black border and a green outline with a width of
+      10px.
+    </p>
+
+    <h2>The outline-style Property</h2>
+
+    <p class="p-0 p-dotted">A dotted outline</p>
+    <p class="p-0 p-dashed">A dashed outline</p>
+    <p class="p-0 p-solid">A solid outline</p>
+    <p class="p-0 p-double">A double outline</p>
+    <p class="p-0 p-groove">
+      A groove outline. The effect depends on the outline-color value.
+    </p>
+    <p class="p-0 p-ridge">
+      A ridge outline. The effect depends on the outline-color value.
+    </p>
+    <p class="p-0 p-inset">
+      An inset outline. The effect depends on the outline-color value.
+    </p>
+    <p class="p-0 p-outset">
+      An outset outline. The effect depends on the outline-color value.
+    </p>
+    <h2>The outline-width Property</h2>
+
+    <p class="p-ex-1">A thin outline.</p>
+    <p class="p-ex-2">A medium outline.</p>
+    <p class="p-ex-3">A thick outline.</p>
+    <p class="p-ex-4">A 4px thick outline.</p>
+
+    <h2>The outline Property</h2>
+
+    <p class="p-ex-sh-1">A dashed outline.</p>
+    <p class="p-ex-sh-2">A dotted red outline.</p>
+    <p class="p-ex-sh-3">A 5px solid yellow outline.</p>
+    <p class="p-ex-sh-4">A thick ridge pink outline.</p>
+
+    <h2>The outline-offset Property</h2>
+
+    <p class="p-offset-1">
+      This paragraph has an outline of 15px outside the border edge.
+    </p>
+  </body>
+</html>
