@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>28.1 pseudo::elements</title>
+  </head>
+  <style>
+    p.p-1::first-line {
+      color: green;
+      font-variant: small-caps;
+    }
+
+    p.p-2::first-letter {
+      color: blue;
+      font-size: xx-large;
+    }
+  </style>
+  <body>
+    <p class="p-1">
+      You can use the ::first-line pseudo-element to add a special effect to the
+      first line of a text. Some more text. And even more, and more, and more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more.
+    </p>
+    <br />
+    <p class="p-2">
+      You can use the ::first-letter pseudo-element to add a special effect to
+      the first character of a text!
+    </p>
+  </body>
+</html>

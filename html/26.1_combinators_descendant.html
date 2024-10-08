@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>26.1 combinators - descendant</title>
+    <style>
+      div.div-1 p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        There are four different combinators in CSS:
+            descendant selector (space)
+            child selector (>)
+            adjacent sibling selector (+)
+            general sibling selector (~)
+    -->
+    <h2>Descendant Selector</h2>
+
+    <p>
+      The descendant selector matches all elements that are descendants of a
+      specified element.
+    </p>
+
+    <div class="div-1">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section><p>Paragraph 3 in the div.</p></section>
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+  </body>
+</html>

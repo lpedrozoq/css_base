@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.7 disply - inline-block</title>
+    <style>
+      /*The display Property*/
+      span.span-a {
+        display: inline; /*el default por span*/
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
+      span.span-b {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
+
+      span.span-c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
+      /*Horizontal navigation lins*/
+      ul.ul-nav {
+        background-color: yellow;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul.ul-nav li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The display Property===============</h1>
+
+    <h2>display: inline</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="span-a">Aliquam</span>
+      <span class="span-a">venenatis</span> gravida nisl sit amet facilisis.
+      Nullam cursus fermentum velit sed laoreet.
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="span-b">Aliquam</span>
+      <span class="span-b">venenatis</span> gravida nisl sit amet facilisis.
+      Nullam cursus fermentum velit sed laoreet.
+    </div>
+
+    <h2>display: block</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="span-c">Aliquam</span>
+      <span class="span-c">venenatis</span> gravida nisl sit amet facilisis.
+      Nullam cursus fermentum velit sed laoreet.
+    </div>
+    <br />
+    <h1>Horizontal Navigation Links============================</h1>
+    <p>
+      By default, list items are displayed vertically. In this example we use
+      display: inline-block to display them horizontally (side by side).
+    </p>
+    <p>
+      Note: If you resize the browser window, the links will automatically break
+      when it becomes too crowded.
+    </p>
+
+    <ul class="ul-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#clients">Our Clients</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </body>
+</html>
