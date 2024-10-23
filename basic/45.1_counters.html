@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>45.1 - counters</title>
+    <style>
+      body {
+        /* Creates or resets a counter */
+        counter-reset: section;
+      }
+      h2::before {
+        /* Increments a counter value */
+        counter-increment: section;
+        /* 
+        Inserts generated content 
+         function counter() the value of a counter to an element
+        */
+        content: "Section " counter(section) ":";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Using CSS Counters</h1>
+
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+  </body>
+</html>

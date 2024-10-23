@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.2 Selectores</title>
+    <style>
+      div p {
+        color: lime;
+      }
+      /*Hijo directo*/
+      div > div {
+        background-color: plum;
+      }
+      .es {
+        background-color: red;
+      }
+      /*Elemento adyacente*/
+      div + section {
+        background-color: palevioletred;
+      }
+      /*Elementos de hermanos*/
+      div ~ p {
+        color: powderblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--div p -->
+    <div>
+      <div>
+        <p>Platzi</p>
+        <p>es</p>
+        <p>increible</p>
+        <div class="es">Es</div>
+      </div>
+    </div>
+    <div>Master</div>
+    <section>Es lo mejor</section>
+    <div>Hermanos</div>
+    <p>Hola 1</p>
+    <p>Hola 2</p>
+  </body>
+</html>

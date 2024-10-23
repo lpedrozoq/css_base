@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>51.1 2d - translate</title>
+    <style>
+      div.div-2d {
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        /*
+            The translate() method moves an element from its current 
+            position (according to the parameters given for the X-axis and the Y-axis).
+            */
+        transform: translate(50px, 50px);
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    CSS transforms allow you to move, rotate, scale, and skew elements.
+    Mouse over the element below to see a 2D transformation:
+    -->
+    <h1>The translate() Method</h1>
+    <p>The translate() method moves an element from its current position:</p>
+    <div>
+      This div element is moved 50 pixels to the right, and 100 pixels down from
+      its current position.
+    </div>
+    <div class="div-2d">
+      This div element is moved 50 pixels to the right, and 100 pixels down from
+      its current position.
+    </div>
+  </body>
+</html>

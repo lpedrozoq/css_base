@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>46.4 - layout - unequal columns</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      /* Style the header */
+      div.div-header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid red;
+      }
+      /* The navbar container */
+      div.div-topnav {
+        border: 1px solid green;
+        overflow: hidden;
+        background-color: #333;
+      }
+      /* Style the topnav links */
+      div.div-topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      /* Change color on hover */
+      div.div-topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      div.div-column {
+        float: left;
+        padding: 10px;
+      }
+      /* Left and right column */
+      div.div-column-side {
+        width: 25%;
+      }
+      /* Middle column */
+      div.div-column-middle {
+        width: 50%;
+      }
+      /* Clear floats after the columns */
+      div.div-row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      div.div-footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        div.div-column-side,
+        div.div-column-middle {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-header">
+      <h1>Header</h1>
+    </div>
+
+    <div class="div-topnav">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+
+    <div class="div-row">
+      <div class="div-column div-column-side">
+        <h2>Side</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      </div>
+
+      <div class="div-column div-column-middle">
+        <h2>Main Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+      </div>
+
+      <div class="div-column div-column-side">
+        <h2>Side</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      </div>
+    </div>
+    <div class="div-footer">
+      <p>Footer</p>
+    </div>
+  </body>
+</html>

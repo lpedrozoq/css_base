@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.1 flex - general</title>
+    <style>
+      .container-basic {
+        display: flex;
+        background-color: papayawhip;
+      }
+      .container-justify-content-space-between {
+        display: flex;
+        justify-content: space-between;
+        background-color: papayawhip;
+        height: 200px;
+        align-items: center;
+      }
+      .container-justify-content-center {
+        display: flex;
+        background-color: papayawhip;
+        justify-content: center;
+        background-color: papayawhip;
+        height: 200px;
+        align-items: center;
+      }
+
+      .item-basic {
+        width: 30px;
+        height: 30px;
+        background-color: purple;
+      }
+
+      .container-basic .item-basic:nth-child(2n + 1) {
+        background-color: green;
+      }
+      .container-justify-content-space-between .item-basic:nth-child(2n + 1) {
+        background-color: green;
+      }
+      .container-justify-content-center .item-basic:nth-child(2n + 1) {
+        background-color: green;
+      }
+
+      /* ====================================================== */
+
+      .container-basic-vertical {
+        display: flex;
+        background-color: papayawhip;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container-justify-content-space-between-vertical {
+        display: flex;
+        justify-content: space-between;
+        background-color: papayawhip;
+        height: 200px;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container-justify-content-center-vertical {
+        display: flex;
+        background-color: papayawhip;
+        justify-content: center;
+        background-color: papayawhip;
+        height: 200px;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container-basic-vertical .item-basic:nth-child(2n + 1) {
+        background-color: green;
+      }
+      .container-justify-content-space-between-vertical
+        .item-basic:nth-child(2n + 1) {
+        background-color: green;
+      }
+      .container-justify-content-center-vertical .item-basic:nth-child(2n + 1) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-basic">
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+    </div>
+
+    <br />
+    <p>Usando justify-content: space-between</p>
+    <div class="container-justify-content-space-between">
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+    </div>
+    <br />
+    <p>Usando justify-content: center</p>
+    <div class="container-justify-content-center">
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+    </div>
+
+    <!-- USANDO VERTICAL DIRECTION -->
+    <p>****USANDO VERTICAL DIRECTION****</p>
+    <div class="container-basic-vertical">
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+    </div>
+
+    <br />
+    <p>Usando justify-content(vertical):: space-between</p>
+    <div class="container-justify-content-space-between-vertical">
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+    </div>
+
+    <br />
+    <p>Usando justify-content(vertical):: center</p>
+    <div class="container-justify-content-center-vertical">
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+      <div class="item-basic"></div>
+    </div>
+  </body>
+</html>
